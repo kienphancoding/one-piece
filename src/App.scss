@@ -1,0 +1,30 @@
+:root {
+  --height-navbar: 70px;
+}
+
+body {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 10px;
+  }
+}
+
+* {
+  top: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "JetBrains Mono", monospace;
+  &::selection {
+    background-color: var(--primary);
+    color: white;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary);
+}

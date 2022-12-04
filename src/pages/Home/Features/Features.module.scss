@@ -1,0 +1,52 @@
+.wrapper {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.info {
+  width: 30%;
+  position: absolute;
+  left: 50px;
+  overflow: hidden;
+  top: 65%;
+  .content {
+    color: white;
+  }
+  .logo {
+    height: 150px;
+    width: 100%;
+  }
+}
+
+.wrapBtn {
+  display: flex;
+  margin-top: 5px;
+}
+
+.btn {
+  display: flex;
+  background-color: white;
+  margin-right: 10px;
+  padding: 10px 15px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.icon,
+.text {
+  font-size: 20px;
+}
+.icon {
+  margin-right: 10px;
+}
+.btnInfo{
+    background-color: gray;
+    color: white;
+}

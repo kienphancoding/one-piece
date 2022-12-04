@@ -1,0 +1,48 @@
+.wrapper {
+  top: 0;
+  position: fixed;
+  font-size: 14px;
+  width: 100%;
+  height: var(--height-navbar);
+  margin: auto 0;
+  padding: 20px 30px;
+  z-index: 1000;
+  color: white;
+  background: linear-gradient(to top, transparent 0%, rgb(0, 0, 0, 0.3) 50%);
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.scroll {
+  background-color: black;
+}
+.left,
+.right {
+  display: flex;
+  align-items: center;
+}
+.icon {
+  margin: 0 15px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.logo {
+  margin-right: 40px;
+  font-size: 30px;
+  font-weight: 600;
+  color: red;
+}
+.item {
+  margin-right: 20px;
+  cursor: pointer;
+}
+.avatar {
+  --radius: 30px;
+  width: var(--radius);
+  height: var(--radius);
+  border-radius: 5px;
+  object-fit: cover;
+  cursor: pointer;
+}
