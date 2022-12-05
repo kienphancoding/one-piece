@@ -35,7 +35,7 @@ const Music = () => {
     }, 1000);
 
     return () => clearInterval(timerId);
-  }, [play,indexSong]);
+  }, [play, indexSong]);
 
   //play / pause
   useEffect(() => {

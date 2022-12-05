@@ -1,10 +1,13 @@
 import { faInfoCircle, faPlay } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import clsx from "clsx";
-import { memo } from "react";
+import { memo,useEffect } from "react";
 import style from "./Features.module.scss";
 
 const Features = () => {
+  useEffect(() => {
+    document.getElementsByClassName(clsx(style.wrapper))[0].scrollIntoView();
+  }, []);
   return (
     <div className={clsx(style.wrapper)}>
       <img

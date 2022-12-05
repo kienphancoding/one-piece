@@ -18,6 +18,15 @@
   padding: 60px 40px;
 }
 
+.info {
+  overflow: auto;
+  max-height: 500px;
+  &::-webkit-scrollbar {
+    width: 5px;
+    display: none;
+  }
+}
+
 .logo {
   --width-logo: 250px;
   width: var(--width-logo);

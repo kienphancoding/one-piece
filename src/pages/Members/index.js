@@ -18,7 +18,7 @@ const Members = () => {
               <div className={clsx(style.logo)}>
                 <img src={x.img} alt="" />
               </div>
-              <div className={clsx(style.info)}>
+              <div className={clsx(style.info)} datacolor={x.color}>
                 <h1 className={clsx(style.name)} style={{ color: x.color }}>
                   Tên : {x.name}
                 </h1>
