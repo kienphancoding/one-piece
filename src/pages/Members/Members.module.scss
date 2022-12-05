@@ -1,0 +1,43 @@
+.background {
+  position: relative;
+}
+
+.img {
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  opacity: 0.6;
+}
+
+.header {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  display: flex;
+  width: 100%;
+  padding: 60px 40px;
+}
+
+.logo {
+  --width-logo: 250px;
+  width: var(--width-logo);
+  min-width: var(--width-logo);
+  margin-right: 40px;
+  img {
+    width: 100%;
+  }
+}
+
+.name {
+  font-size: 70px;
+  font-weight: 600;
+  font-family: "Bowlby One", cursive;
+  text-shadow: 5px 0px 10px rgb(0, 0, 0);
+}
+
+.text {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Bowlby One", cursive;
+  text-shadow: 7px 0px 7px rgb(0, 0, 0);
+}

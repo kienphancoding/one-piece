@@ -2,21 +2,17 @@ import clsx from "clsx";
 import style from "./Navbar.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faBell,
-  faCaretDown,
   faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   const list = [
     { path: "/", name: "Trang chủ" },
-    { path: "/", name: "Series" },
-    { path: "/", name: "Movies" },
-    { path: "/", name: "New and Popular" },
-    { path: "/", name: "My list" },
+    { path: "/tom-tat", name: "Tóm tắt" },
   ];
 
   useEffect(() => {
@@ -41,9 +37,9 @@ const Navbar = () => {
           <div className={clsx(style.logo)}>ONEPIECE</div>
           {list.map((x, index) => {
             return (
-              <span className={clsx(style.item)} key={index}>
+              <Link to={x.path} className={clsx(style.item)} key={index}>
                 {x.name}
-              </span>
+              </Link>
             );
           })}
         </div>

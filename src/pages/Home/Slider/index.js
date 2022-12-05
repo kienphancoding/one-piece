@@ -2,6 +2,7 @@ import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import clsx from "clsx";
 import { memo, useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import style from "./Slider.module.scss";
 
 const Slider = () => {
@@ -78,15 +79,12 @@ const Slider = () => {
           icon={faAngleLeft}
           onClick={() => handleMove("left")}
         />
-        <div id="list" className={clsx(style.list)} data="abc">
+        <div id="list" className={clsx(style.list)}>
           {listItems.map((x, index) => {
             return (
-              <img
-                alt="movie"
-                src={x.img}
-                key={index}
-                className={clsx(style.item)}
-              />
+              <Link to={`/members`} className={clsx(style.item)} key={index}>
+                <img alt="movie" src={x.img} />
+              </Link>
             );
           })}
         </div>
